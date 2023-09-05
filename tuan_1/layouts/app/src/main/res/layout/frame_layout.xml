@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:text="Frame" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_gravity="center"
+        android:text="Click Me!" />
+
+</FrameLayout>
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    &lt;!&ndash; Đây là tệp layout cho một FrameLayout, một loại layout trong Android &ndash;&gt;-->
+<!--<FrameLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/frameLayout" &lt;!&ndash; Định danh duy nhất cho FrameLayout &ndash;&gt;-->
+<!--    android:layout_width="match_parent" &lt;!&ndash; Chiều rộng của FrameLayout là bằng với cha nó &ndash;&gt;-->
+<!--    android:layout_height="match_parent" &lt;!&ndash; Chiều cao của FrameLayout là bằng với cha nó &ndash;&gt;-->
+<!--    tools:context=".MainActivity"> &lt;!&ndash; Ngữ cảnh dành cho layout, thường để tham chiếu đến Activity &ndash;&gt;-->
+
+<!--    &lt;!&ndash; TextView là một phần tử để hiển thị văn bản &ndash;&gt;-->
+<!--<TextView-->
+<!--android:id="@+id/textView" &lt;!&ndash; Định danh duy nhất cho TextView &ndash;&gt;-->
+<!--    android:layout_width="104dp" &lt;!&ndash; Chiều rộng của TextView &ndash;&gt;-->
+<!--    android:layout_height="wrap_content" &lt;!&ndash; Chiều cao của TextView tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
+<!--    android:layout_gravity="center|left" &lt;!&ndash; Vị trí của TextView trong FrameLayout, ở giữa và bên trái &ndash;&gt;-->
+<!--    android:text="Frame" &lt;!&ndash; Văn bản hiển thị trên TextView &ndash;&gt;-->
+<!--    />-->
+
+<!--    &lt;!&ndash; Button là một phần tử để hiển thị nút &ndash;&gt;-->
+<!--<Button-->
+<!--android:id="@+id/button" &lt;!&ndash; Định danh duy nhất cho Button &ndash;&gt;-->
+<!--    android:layout_width="wrap_content" &lt;!&ndash; Chiều rộng của Button tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
+<!--    android:layout_height="102dp" &lt;!&ndash; Chiều cao cố định của Button &ndash;&gt;-->
+<!--    android:layout_gravity="center" &lt;!&ndash; Vị trí của Button trong FrameLayout, ở giữa &ndash;&gt;-->
+<!--    android:text="Click Me!" &lt;!&ndash; Văn bản hiển thị trên nút &ndash;&gt;-->
+<!--    />-->
+
+<!--    </FrameLayout>-->
+

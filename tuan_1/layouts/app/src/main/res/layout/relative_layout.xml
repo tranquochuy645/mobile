@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me!"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    &lt;!&ndash; Đây là tệp layout cho một RelativeLayout, một loại layout trong Android &ndash;&gt;-->
+<!--<RelativeLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/relativeLayout" &lt;!&ndash; Định danh duy nhất cho RelativeLayout &ndash;&gt;-->
+<!--    android:layout_width="match_parent" &lt;!&ndash; Chiều rộng của RelativeLayout là bằng với cha nó &ndash;&gt;-->
+<!--    android:layout_height="match_parent" &lt;!&ndash; Chiều cao của RelativeLayout là bằng với cha nó &ndash;&gt;-->
+<!--    tools:context=".MainActivity"> &lt;!&ndash; Ngữ cảnh dành cho layout, thường để tham chiếu đến Activity &ndash;&gt;-->
+
+<!--    &lt;!&ndash; TextView là một phần tử để hiển thị văn bản &ndash;&gt;-->
+<!--<TextView-->
+<!--android:id="@+id/textView" &lt;!&ndash; Định danh duy nhất cho TextView &ndash;&gt;-->
+<!--    android:layout_width="wrap_content" &lt;!&ndash; Chiều rộng của TextView tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
+<!--    android:layout_height="wrap_content" &lt;!&ndash; Chiều cao của TextView tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
+<!--    android:text="Relative" &lt;!&ndash; Văn bản hiển thị trên TextView &ndash;&gt;-->
+<!--    android:layout_centerInParent="true" &lt;!&ndash; Vị trí của TextView trong RelativeLayout, ở giữa màn hình &ndash;&gt;-->
+<!--    />-->
+
+<!--    &lt;!&ndash; Button là một phần tử để hiển thị nút &ndash;&gt;-->
+<!--<Button-->
+<!--android:id="@+id/button" &lt;!&ndash; Định danh duy nhất cho Button &ndash;&gt;-->
+<!--    android:layout_width="wrap_content" &lt;!&ndash; Chiều rộng của Button tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
+<!--    android:layout_height="wrap_content" &lt;!&ndash; Chiều cao của Button tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
+<!--    android:text="Click Me!" &lt;!&ndash; Văn bản hiển thị trên nút &ndash;&gt;-->
+<!--    android:layout_below="@id/textView" &lt;!&ndash; Đặt nút ở dưới TextView &ndash;&gt;-->
+<!--    android:layout_centerHorizontal="true" &lt;!&ndash; Đặt nút ở giữa theo chiều ngang &ndash;&gt;-->
+<!--    />-->
+
+<!--    </RelativeLayout>-->

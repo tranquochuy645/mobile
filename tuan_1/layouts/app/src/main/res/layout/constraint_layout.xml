@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Đây là tệp layout cho một ConstraintLayout, một loại layout trong Android -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- TextView là một phần tử để hiển thị văn bản -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Constraint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    <?xml version="1.0" encoding="utf-8"?>-->
+    <!--    &lt;!&ndash; Đây là tệp layout cho một ConstraintLayout, một loại layout trong Android &ndash;&gt;-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:id="@+id/constraintLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".MainActivity">-->
+
+    <!--&lt;!&ndash; TextView là một phần tử để hiển thị văn bản &ndash;&gt;-->
+    <!--<TextView-->
+    <!--    android:id="@+id/textView"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:text="Constraint" &lt;!&ndash; Văn bản hiển thị trên TextView &ndash;&gt;-->
+
+    <!--&lt;!&ndash; Các ràng buộc (constraints) được sử dụng để định vị TextView trong ConstraintLayout &ndash;&gt;-->
+    <!--app:layout_constraintStart_toStartOf="parent" &lt;!&ndash; Bắt đầu TextView từ đầu của parent &ndash;&gt;-->
+    <!--app:layout_constraintTop_toTopOf="parent"     &lt;!&ndash; Đặt TextView ở đầu của parent &ndash;&gt;-->
+    <!--app:layout_constraintEnd_toEndOf="parent"     &lt;!&ndash; Kết thúc TextView ở cuối của parent &ndash;&gt;-->
+    <!--app:layout_constraintBottom_toBottomOf="parent" &lt;!&ndash; Đặt TextView ở dưới của parent &ndash;&gt;-->
+    <!--/>-->
+
+    <!--&lt;!&ndash; Button là một phần tử để hiển thị nút &ndash;&gt;-->
+    <!--<Button-->
+    <!--    android:id="@+id/button"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:text="Click Me!" &lt;!&ndash; Văn bản hiển thị trên nút &ndash;&gt;-->
+
+    <!--&lt;!&ndash; Các ràng buộc (constraints) được sử dụng để định vị Button trong ConstraintLayout &ndash;&gt;-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView" &lt;!&ndash; Đặt nút ở dưới của TextView &ndash;&gt;-->
+    <!--app:layout_constraintStart_toStartOf="parent"     &lt;!&ndash; Bắt đầu nút từ đầu của parent &ndash;&gt;-->
+    <!--app:layout_constraintEnd_toEndOf="parent"         &lt;!&ndash; Kết thúc nút ở cuối của parent &ndash;&gt;-->
+    <!--/>-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
