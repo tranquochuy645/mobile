@@ -1,51 +1,104 @@
+// Package declaration
 package com.example.layouts;
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
+// Import statements
+import androidx.appcompat.app.AppCompatActivity; // Import the AppCompatActivity class
+import android.os.Bundle; // Import the Bundle class
+import android.view.View; // Import the View class
+import android.widget.Button; // Import the Button class
+import android.widget.TextView; // Import the TextView class
+
+// MainActivity class definition, extending AppCompatActivity
 public class MainActivity extends AppCompatActivity {
-    private Button switchLayoutButton; // Khai báo biến cho nút chuyển đổi layout
-    private int index = 0; // Biến để theo dõi loại layout hiện tại
-    private int[] layoutIds = {
-            R.layout.constraint_layout,
-            R.layout.relative_layout,
-            R.layout.linear_layout,
-            R.layout.frame_layout
-    }; // Danh sách các ID của layout
+    // Declare a Button variable for layout switching
+    private Button switchLayoutButton; // Declaration of the button for layout switching
 
+    // Declare an integer variable to track the current layout
+    private int index = 0; // Variable to track the current layout
+
+    // Declare an array to store layout IDs
+    private int[] layoutIds = {
+            R.layout.constraint_layout, // Array element for ConstraintLayout ID
+            R.layout.relative_layout,   // Array element for RelativeLayout ID
+            R.layout.linear_layout,     // Array element for LinearLayout ID
+            R.layout.frame_layout      // Array element for FrameLayout ID
+    }; // Array to store layout IDs
+
+    // onCreate method, called when the activity is created
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.constraint_layout); // Thiết lập layout ban đầu là constraint_layout
+        super.onCreate(savedInstanceState); // Call the superclass's onCreate method
+        // Set the initial layout to constraint_layout
+        setContentView(R.layout.constraint_layout); // Set the layout for this activity
 
-        switchLayoutButton = findViewById(R.id.button); // Tìm nút trong layout
+        // Find the button in the layout by its ID
+        switchLayoutButton = findViewById(R.id.button); // Get a reference to the button in the layout
 
-        // Đặt trình nghe sự kiện click cho nút chuyển đổi
+        // Set a click listener for the layout switching button
         switchLayoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switchLayout(); // Gọi hàm để chuyển đổi layout
+                switchLayout(); // Call the switchLayout method to change layouts when the button is clicked
             }
         });
     }
 
+    // Method to switch layouts
     public void switchLayout() {
-        // Thay đổi layout dựa trên biến index
-        index = (index + 1) % 4;
+        // Change the layout based on the index variable
+        index = (index + 1) % 4; // Increment index and wrap around to 0 if it reaches 4
 
-        // Đặt layout mới bằng cách sử dụng ID từ danh sách layoutIds
-        setContentView(layoutIds[index]);
+        // Set the new layout using an ID from the layoutIds array
+        setContentView(layoutIds[index]); // Change the layout to the selected one
 
-        // Tìm lại nút trong layout mới để cập nhật trình nghe sự kiện click
-        switchLayoutButton = findViewById(R.id.button);
+        // If the current layout is frame_layout, set click listeners for TextViews
+        if (index == 3) {
+            final TextView textView1 = findViewById(R.id.textView1); // Find TextView1 in the new layout
+            final TextView textView2 = findViewById(R.id.textView2); // Find TextView2 in the new layout
+            final TextView textView3 = findViewById(R.id.textView3); // Find TextView3 in the new layout
 
-        // Đặt trình nghe sự kiện click cho nút chuyển đổi trong layout mới
+            // Set click listeners to bring TextViews to the front when clicked
+            textView1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    bringViewToFront(R.id.textView1); // Call the bringViewToFront method for TextView1
+                }
+            });
+
+            textView2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    bringViewToFront(R.id.textView2); // Call the bringViewToFront method for TextView2
+                }
+            });
+
+            textView3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    bringViewToFront(R.id.textView3); // Call the bringViewToFront method for TextView3
+                }
+            });
+        }
+
+        // Find the layout switching button in the new layout
+        switchLayoutButton = findViewById(R.id.button); // Get a reference to the button in the new layout
+
+        // Set a click listener for the layout switching button in the new layout
         switchLayoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switchLayout(); // Gọi hàm để chuyển đổi layout
+                switchLayout(); // Call the switchLayout method to change layouts when the button is clicked
             }
         });
+    }
+
+    // Method to bring a view to the front
+    public void bringViewToFront(int viewId) {
+        View viewToBringToFront = findViewById(viewId); // Find the view to bring to the front by its ID
+        if (viewToBringToFront != null) {
+            viewToBringToFront.bringToFront(); // Bring the view to the front of the layout
+            viewToBringToFront.invalidate(); // Invalidate the view to request a redraw
+            viewToBringToFront.requestLayout(); // Request a layout update for the view
+        }
     }
 }

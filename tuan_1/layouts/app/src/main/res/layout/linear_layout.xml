@@ -8,48 +8,69 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- TextView to declare that this is a LinearLayout -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/declarationTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Linear"
-        android:layout_gravity="center" />
+        android:text="This is a LinearLayout"
+        android:background="#000"
+        android:textColor="#FFF"
+        android:padding="8dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_horizontal" />
 
+    <!-- Nested Horizontal LinearLayout for TextViews and Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+
+        <!-- TextView 1 -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text 1"
+            android:layout_margin="15dp"
+            android:layout_gravity="center" />
+
+        <!-- TextView 2 -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text 2"
+            android:layout_margin="15dp"
+            android:layout_gravity="center" />
+
+        <!-- TextView 3 -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text 3"
+            android:layout_margin="15dp"
+            android:layout_gravity="center" />
+
+        <!-- TextView 4 -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text 4"
+            android:layout_margin="15dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Button -->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click Me!"
+        android:text="Change Layout"
         android:layout_gravity="center" />
 
 </LinearLayout>
-<!--    <?xml version="1.0" encoding="utf-8"?>-->
-<!--    &lt;!&ndash; Đây là tệp layout cho một LinearLayout, một loại layout trong Android &ndash;&gt;-->
-<!--<LinearLayout-->
-<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--xmlns:tools="http://schemas.android.com/tools"-->
-<!--android:id="@+id/linearLayout" &lt;!&ndash; Định danh duy nhất cho LinearLayout &ndash;&gt;-->
-<!--    android:layout_width="match_parent" &lt;!&ndash; Chiều rộng của LinearLayout là bằng với cha nó &ndash;&gt;-->
-<!--    android:layout_height="match_parent" &lt;!&ndash; Chiều cao của LinearLayout là bằng với cha nó &ndash;&gt;-->
-<!--    android:orientation="vertical" &lt;!&ndash; Hướng của LinearLayout, là dọc theo trục Y &ndash;&gt;-->
-<!--    tools:context=".MainActivity"> &lt;!&ndash; Ngữ cảnh dành cho layout, thường để tham chiếu đến Activity &ndash;&gt;-->
-
-<!--    &lt;!&ndash; TextView là một phần tử để hiển thị văn bản &ndash;&gt;-->
-<!--<TextView-->
-<!--android:id="@+id/textView" &lt;!&ndash; Định danh duy nhất cho TextView &ndash;&gt;-->
-<!--    android:layout_width="wrap_content" &lt;!&ndash; Chiều rộng của TextView tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
-<!--    android:layout_height="wrap_content" &lt;!&ndash; Chiều cao của TextView tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
-<!--    android:text="Linear" &lt;!&ndash; Văn bản hiển thị trên TextView &ndash;&gt;-->
-<!--    android:layout_gravity="center" &lt;!&ndash; Vị trí của TextView trong LinearLayout, ở giữa &ndash;&gt;-->
-<!--    />-->
-
-<!--    &lt;!&ndash; Button là một phần tử để hiển thị nút &ndash;&gt;-->
-<!--<Button-->
-<!--android:id="@+id/button" &lt;!&ndash; Định danh duy nhất cho Button &ndash;&gt;-->
-<!--    android:layout_width="wrap_content" &lt;!&ndash; Chiều rộng của Button tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
-<!--    android:layout_height="wrap_content" &lt;!&ndash; Chiều cao của Button tự điều chỉnh dựa trên nội dung &ndash;&gt;-->
-<!--    android:text="Click Me!" &lt;!&ndash; Văn bản hiển thị trên nút &ndash;&gt;-->
-<!--    android:layout_gravity="center" &lt;!&ndash; Vị trí của Button trong LinearLayout, ở giữa &ndash;&gt;-->
-<!--    />-->
-
-<!--    </LinearLayout>-->
