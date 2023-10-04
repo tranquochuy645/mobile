@@ -66,10 +66,6 @@ public class LoginActivity extends AppCompatActivity {
     // Validates the entered credentials against a predefined list
     private boolean isValidCredentials(String username, String password) {
         // Check if the entered username is in the HashMap and the corresponding password matches
-        if (validCredentials.containsKey(username) && validCredentials.get(username).equals(password)) {
-            return true; // Valid credentials
-        } else {
-            return false; // Invalid credentials
-        }
+        return validCredentials.containsKey(username) && validCredentials.get(username).equals(password);
     }
 }
