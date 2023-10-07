@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Device Name -->
+        <TextView
+            android:id="@+id/text_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Name"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Device Description -->
+        <TextView
+            android:id="@+id/text_device_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Device Description"
+            android:textSize="14sp"
+            android:textColor="#888888"/>
+
+        <!-- Add more views here for additional device details -->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
