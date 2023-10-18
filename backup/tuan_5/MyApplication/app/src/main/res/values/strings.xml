@@ -1,0 +1,17 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Smart Home App</string>
+
+    <!-- Navigation Drawer Items -->
+    <string name="nav_item_1">Item 1</string>
+    <string name="nav_item_2">Item 2</string>
+    <!-- Add more navigation drawer items as needed -->
+
+    <!-- Navigation Drawer Open and Close Descriptions -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- User Information (for the header layout) -->
+    <string name="user_name">John Doe</string>
+    <string name="user_email">john.doe@example.com</string>
+</resources>

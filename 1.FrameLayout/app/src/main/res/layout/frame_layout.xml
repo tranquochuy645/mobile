@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView to declare that this is a FrameLayout -->
+    <TextView
+        android:id="@+id/declarationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a FrameLayout"
+        android:layout_gravity="center"
+        android:background="#000"
+        android:textColor="#FFFFFF"
+        android:padding="8dp" />
+
+    <!-- TextView 1 (Bottom) with different background color -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Text 1"
+        android:layout_gravity="top|left"
+        android:layout_margin="10dp"
+        android:background="#FF5733"
+        android:textColor="#000"
+        android:padding="8dp"
+        />
+
+    <!-- TextView 2 (Middle) with different background color -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:layout_margin="40dp"
+        android:background="#5B83FB"
+        android:padding="8dp"
+        android:text="Text 2"
+        android:textColor="#000" />
+
+    <!-- TextView 3 (Top) with different background color -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Text 3"
+        android:layout_gravity="left"
+        android:layout_margin="70dp"
+        android:background="#33CC33"
+        android:textColor="#000"
+        android:padding="8dp" />
+
+    <!-- TextView 4 with different background color -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 4"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:background="#FF9900"
+        android:textColor="#000"
+        android:padding="8dp" />
+
+</FrameLayout>
