@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#75ff3b"
+            >
+
+            <TextView
+                android:id="@+id/room_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="7dp"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:text="room name" />
+
+            <ImageButton
+                android:id="@+id/btn_back_home"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:contentDescription="back button"
+                android:background="#75ff3b"
+                android:src="@drawable/baseline_arrow_back_24" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_devices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_device"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@drawable/ic_add_foreground"
+        app:iconSize="24dp"
+        app:iconPadding="0dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:shapeAppearanceOverlay="@style/RoundButton"
+        android:contentDescription="add device"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="621dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="49dp"
+        />
+</RelativeLayout>
